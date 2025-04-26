@@ -5,12 +5,10 @@ esCuadrado (Rect n1 n2) = n1 == n2
 esCuadrado _            = False 
  
 siempreArmaCuadradoDeTamano :: Float -> (Float -> Shape) -> Bool 
-siempreArmaCuadradoDeTamano n f = esCuadrado (f n) 
-                               && esCuadradoDeTamano n (f n)
+siempreArmaCuadradoDeTamano n f = esCuadradoDeTamano n (f n)
 
 esCuadradoDeTamano :: Float -> Shape -> Bool 
--- PRECOND: es un cuadrado
-esCuadradoDeTamano n (Rect n1 n2) = n1 == n
+esCuadradoDeTamano n (Rect n1 n2) = n1 == n2 && n1 == n
 esCuadradoDeTamano n _            = False 
 
 siempreArmaCuadrado :: (Float -> Shape) -> Bool 
