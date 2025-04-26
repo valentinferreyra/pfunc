@@ -21,3 +21,6 @@ armadorDeCuadrados n = Rect n n
 
 noArmadorDeCuadrados :: Float -> Shape 
 noArmadorDeCuadrados n = Rect n (n+1)
+
+-- siempreArmaCuadrado armadorDeCuadrados :: True
+-- siempreArmaCuadrado noArmadorDeCuadrados :: False
