@@ -1,4 +1,8 @@
 data Shape = Circle Float | Rect Float Float
+data Gusto = Chocolate | DDL | Frutilla | Sambayon 
+data Helado = Vasito Gusto 
+            | Cucurucho Gusto Gusto
+            | Pote Gusto Gusto Gusto 
 
 esCuadrado :: Shape -> Bool
 esCuadrado (Rect n1 n2) = n1 == n2
@@ -18,7 +22,7 @@ cuadrado :: Float -> Shape
 cuadrado n = Rect n n 
 
 noCuadrado :: Float -> Shape 
-noArmadorDeCuadrados n = Rect n (n+1)
+noCuadrado n = Rect n (n+1)
 
 shapeNormal :: (Float -> a) -> a 
 shapeNormal c = c 1
@@ -27,3 +31,12 @@ shapeNormal c = c 1
 -- siempreArmaCuadrado noCuadrado :: False
 -- siempreArmaCuadrado (Rect 2) :: False   
 -- siempreArmaCuadrado (shapeNormal Rect) :: True
+
+----------------------------------------------------------
+
+data Par a = MkP a a 
+chocoHelate consH = consH Chocolate 
+
+-- MkP¨True False :: Par Bool
+-- MkP (Vasito DDL) (chocoHelate Vasito) :: Par Helado
+-- MkP (chocoHelate Cucurucho) Vasito :: Par (Gusto -> Helado)
