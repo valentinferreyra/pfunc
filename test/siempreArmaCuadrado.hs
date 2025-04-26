@@ -14,7 +14,7 @@ esCuadradoDeTamano n (Rect n1 n2) = n1 == n
 esCuadradoDeTamano n _            = False 
 
 siempreArmaCuadrado :: (Float -> Shape) -> Bool 
-siempreArmaCuadrado f = siempreArmaCuadradoDeTamano 1 f 
+siempreArmaCuadrado f = esCuadrado (f 1) 
 
 armadorDeCuadrados :: Float -> Shape 
 armadorDeCuadrados n = Rect n n 
