@@ -22,5 +22,10 @@ armadorDeCuadrados n = Rect n n
 noArmadorDeCuadrados :: Float -> Shape 
 noArmadorDeCuadrados n = Rect n (n+1)
 
+shapeNormal :: (Float -> a) -> a 
+shapeNormal c = c 1
+
 -- siempreArmaCuadrado armadorDeCuadrados :: True
 -- siempreArmaCuadrado noArmadorDeCuadrados :: False
+-- siempreArmaCuadrado (Rect 2) :: False   
+-- siempreArmaCuadrado (shapeNormal Rect) :: True
