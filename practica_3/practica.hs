@@ -72,7 +72,6 @@ subst :: (a -> b -> c) -> (a -> b) -> c
 subst = \f g x = f x (g x)
 -- sin lambda
 subst f g x = f x (g x)
-
 ------------------------------------------------------------------
 -- EJERCICIO 6
 {-

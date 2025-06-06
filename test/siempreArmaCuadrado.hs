@@ -37,6 +37,11 @@ shapeNormal c = c 1
 data Par a = MkP a a 
 chocoHelate consH = consH Chocolate 
 
--- MkP¨True False :: Par Bool
+-- Mk True False :: Par Bool
 -- MkP (Vasito DDL) (chocoHelate Vasito) :: Par Helado
 -- MkP (chocoHelate Cucurucho) Vasito :: Par (Gusto -> Helado)
+
+-- MkP (cuadrado DDL) :: no tipa porque cuadrado DDL no tiene tipo
+-- y para poder generar un Par a, si o si necesito construirlo en base a un tipo a
+
+
