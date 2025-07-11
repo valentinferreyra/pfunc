@@ -2,7 +2,7 @@
 
 Si no tengo el TP acá, no lo hice.
 Este proyecto muestra mis trabajos prácticos y ejercicios hechos durante la cursada, las cuales no fueron revisados
-ni corregidos por ningún docente / especializado en el área, lo cual no de la veracidad. No te copies.
+ni corregidos por ningún docente / especializado en el área, lo cual no le da la suficiente veracidad para decir que están bien hechos. No te copies.
 
 [Práctica 2](https://github.com/valentinferreyra/pfunc/tree/main/practica_2): Sistemas de tipos </br>
 [Práctica 3](https://github.com/valentinferreyra/pfunc/tree/main/practica_3): Currificación </br>
